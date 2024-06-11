@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aisha Roslan's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
+  <body class="dark unbounded-regular">
+    <!-- CONTACT MODAL -->
+    <div
+      class="modal fade"
+      id="contact"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="contactForm"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="contactForm">Contact Form</h1>
+            <span
+              class="material-symbols-outlined btn-close-icon"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            >
+              close
+            </span>
+          </div>
+          <div class="modal-body outfit-regular">
+            <p class="intro_form">
+              Hi, thanks for visiting my portfolio. Feel free to send me a
+              message in the form below if you have any inquiries or
+              opportunities!
+            </p>
+            <div class="container w-100 px-5 rounded-5 shadow">
+              <form action="https://formspree.io/f/xoqgrdna" method="POST">
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="name" class="col-form-label-lg">Name:</label>
+                    <input
+                      type="text"
+                      class="form-control from-control-lg"
+                      name="name"
+                      aria-label="Name"
+                      placeholder="Name"
+                      required
+                    />
+                    <!-- name of input is what's sent to API -->
+                  </div>
+                  <div class="col">
+                    <label for="email" class="col-form-label-lg">Email:</label>
+                    <input
+                      type="email"
+                      class="form-control from-control-lg"
+                      name="email"
+                      aria-label="Email Address"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="row subject">
+                  <label for="intent" class="subject_title"
+                    >Subject Matter</label
+                  >
+                  <div class="form-check intent">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="intent"
+                      value="Internship"
+                      id="option1"
+                    />
+                    <label class="form-check-label" for="option1">
+                      Internship
+                    </label>
+                  </div>
+                  <div class="form-check intent">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="intent"
+                      value="Project Opportunity"
+                      id="option2"
+                    />
+                    <label class="form-check-label" for="option2">
+                      Project Opportunity
+                    </label>
+                  </div>
+                  <div class="form-check intent">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="intent"
+                      value="Networking/Coffee Chat"
+                      id="option3"
+                    />
+                    <label class="form-check-label" for="option3">
+                      Networking/Coffee Chat
+                    </label>
+                  </div>
+                  <div class="form-check intent">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="intent"
+                      value="Other"
+                      id="option4"
+                    />
+                    <label class="form-check-label" for="option4">
+                      Other
+                    </label>
+                  </div>
+                </div>
+
+                <!-- form-floating is so that label can be in the textarea -->
+                <p class="message_title">Leave me a message!</p>
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    style="height: 16rem"
+                    placeholder="Leave a coment here."
+                    name="message"
+                    required
+                  ></textarea>
+                  <label for="message">Hello!</label>
+                </div>
+
+                <input
+                  name="subject"
+                  type="hidden"
+                  value="{{ name }} contacted you about {{ intent }}"
+                />
+
+                <div class="dismissal">
+                  <button
+                    type="button"
+                    class="btn close-btn"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="submit" class="btn send-btn">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FADE-IN NAV BAR -->
+    <div id="navBar">
+      <ul>
+        <li><a href="../home/index.html">home</a></li>
+        <li><a href="../projects/index.html">projects</a></li>
+        <li><a href="../gallery/index.html">gallery</a></li>
+        <li><a href="../about/index.html">about</a></li>
+        <li><a href="#contact" data-bs-toggle="modal">contact</a></li>
+      </ul>
+    </div>
+
+    <!-- SLIDE-IN LOGO AND NAME -->
+    <div class="slide-in">
+      <img src="../images/brand/logo.png" class="logo" id="ar" />
+      <header class="name">
+        <h1 id="myText" class="outfit-black">A i s h a</h1>
+        <h1 id="myText2" class="outfit-black">R o s l a n</h1>
+      </header>
+    </div>
+
+    <!-- SCROLL TEXT ANIMATION -->
+    <section class="text-block">
+      <div class="container">
+        <div class="text__effect">
+          <div class="text__overlay"></div>
+          <p class="sentence dm-sans-medium">
+            Hi, I'm Aisha, I'm a Computer Science major at NYU Tandon School of
+          </p>
+        </div>
+        <div class="text__effect">
+          <div class="text__overlay"></div>
+          <p class="sentence dm-sans-medium">
+            Engineering. My career focuses are mainly programming and designing
+          </p>
+        </div>
+        <div class="text__effect">
+          <div class="text__overlay"></div>
+          <p class="sentence dm-sans-medium">
+            but I'm also a coffee connoiseur and photographer on the side. I
+            love
+          </p>
+        </div>
+        <div class="text__effect">
+          <div class="text__overlay"></div>
+          <p class="sentence dm-sans-medium">
+            collaborating, building, and networking, so check out my portfolio
+          </p>
+        </div>
+        <div class="text__effect">
+          <div class="text__overlay"></div>
+          <p class="sentence dm-sans-medium">
+            or
+            <a data-bs-toggle="modal" href="#contact" class="contact">
+              <span class="dm-sans-medium-italic">contact</span>
+            </a>
+            me!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="profile container">
+      <div class="row">
+        <h2 class="im outfit-regular">I'm a ...</h2>
+      </div>
+      <div class="row">
+        <div class="expertise col-lg-8 col-sm-12">
+          <div class="row">
+            <div class="col-6 ex">
+              <img src="../images/skills/programmer.png" />
+            </div>
+            <div class="col-6 ex">
+              <img src="../images/skills/engineer.png" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 ex">
+              <img src="../images/skills/designer.png" />
+            </div>
+            <div class="col-6 ex">
+              <img src="../images/skills/photographer.png" />
+            </div>
+          </div>
+        </div>
+        <div class="profile_pic col-lg-4 col-sm-12">
+          <img
+            src="../images/brand/profile.png"
+            class="image"
+            alt="profile_picture"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="skills_box">
+      <div class="row">
+        <p class="skill_text outfit-regular text-start">Skills</p>
+      </div>
+      <div class="skills">
+        <div id="cplusplus">
+          <img src="../images/skills/c++.png" alt="C++" />
+        </div>
+        <div id="html">
+          <img src="../images/skills/html.png" alt="HTML" />
+        </div>
+        <div id="css">
+          <img src="../images/skills/css.png" alt="CSS" />
+        </div>
+        <div id="js">
+          <img src="../images/skills/javascript.png" alt="JavaScript" />
+        </div>
+        <div id="python">
+          <img src="../images/skills/python.png" alt="Python" />
+        </div>
+        <div id="github">
+          <img src="../images/skills/github.png" alt="GitHub" />
+        </div>
+        <div id="adobe">
+          <img src="../images/skills/adobe_cc.png" alt="Adobe CC" />
+        </div>
+        <div id="figma">
+          <img src="../images/skills/figma.png" alt="Figma" />
+        </div>
+        <div id="sql">
+          <img src="../images/skills/sql.png" alt="SQL" />
+        </div>
+      </div>
+    </div>
+
+    <!-- UP BUTTON -->
+    <div class="upBtn">
+      <a href="#navBar"><img src="../images/arrows/arrow_up.png" id="up" /></a>
+    </div>
+
+    <!-- FOOTER  -->
+    <div class="separator"></div>
+
+    <div class="footer d-flex justify-content-between">
+      <div class="copyright">
+        <h3 class="outfit-regular">Copyright &copy; 2024 Aisha Roslan</h3>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/aisharoslan" target="_blank">
+          <img src="../images/soc_med/github.png" />
+        </a>
+        <a href="https://www.linkedin.com/in/aisha-roslan/" target="_blank">
+          <img src="../images/soc_med/linkedin.png" id="linkedin" />
+        </a>
+        <a href="mailto:ar7805@nyu.edu" target="_blank">
+          <img src="../images/soc_med/gmail.png" />
+        </a>
+      </div>
+    </div>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+    <!-- Draggable -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- NPM Split Type (cause GSAP SplitText is Club GSAP plugin :(( ) -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- OWN SCRIPT -->
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", () => {
+        gsap.from("#navBar", 1, { opacity: 0, y: -100, delay: 0.5 });
+        gsap.from(".name", 1, { x: 100, delay: 0.5, opacity: 0 });
+        gsap.from(".logo", 1, { x: -100, delay: 0.5, opacity: 0 });
+
+        const myText = new SplitType("#myText");
+
+        gsap.to(".char", {
+          y: 0,
+          stagger: 0.05,
+          delay: 0.2,
+          duration: 0.1,
+        });
+
+        const myText2 = new SplitType("#myText2");
+
+        gsap.to(".char", {
+          y: 0,
+          stagger: 0.05,
+          delay: 0.4,
+          duration: 0.1,
+        });
+      });
+
+      gsap.registerPlugin(Draggable, ScrollTrigger);
+
+      Draggable.create("#ar", {
+        type: "rotation",
+        inertia: true,
+      });
+
+      let navButtons = document.getElementsByTagName("LI");
+      navButtons = [].slice.call(navButtons);
+      navButtons.forEach((button) => {
+        button.addEventListener("mouseenter", function () {
+          gsap.to(this, { className: "active", duration: 0.2 });
+        });
+      });
+
+      navButtons.forEach((button) => {
+        button.addEventListener("mouseleave", function () {
+          gsap.to(this, { className: "", duration: 0.2 });
+        });
+      });
+
+      gsap.set(".text__effect p", {
+        y: 32,
+        opacity: 0,
+      });
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".text-block",
+          start: "top center",
+          end: "bottom top += 10%", // when bottom reaches top
+          scrub: true,
+        },
+      });
+
+      let texts = document.querySelectorAll(".text__effect");
+      texts.forEach((text, index) => {
+        const overlay = text.querySelector(".text__overlay");
+        const content = text.querySelector("p");
+        tl.to(overlay, {
+          scaleX: 0,
+        }).to(
+          content,
+          {
+            y: 0,
+            opacity: 1,
+            ease: "expo.out",
+            duration: 2,
+            delay: () => index * 0.2,
+          },
+          0
+        );
+      });
+
+      const tml = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".expertise",
+          start: "top bottom -= 700",
+          end: "bottom center -= 200",
+          scrub: true,
+        },
+      });
+
+      let boxes = document.querySelectorAll(".ex");
+      tml.from(".im", 0.5, { x: 100, opacity: 0 }).from(
+        boxes,
+        {
+          opacity: 0,
+          x: -100,
+          duration: 1,
+        },
+        0
+      );
+
+      boxes.forEach((box) => {
+        box.addEventListener("mouseover", () => {
+          gsap.to(box, 0.5, {
+            x: randomNumber(-100, 100),
+            y: randomNumber(-100, 100),
+            z: -1,
+            z: randomNumber(-100, 100),
+          });
+        });
+      });
+
+      function randomNumber(min, max) {
+        return Math.floor(Math.random() * (1 + max - min) + min);
+      }
+
+      const tml2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".skills_box",
+          start: "top bottom -= 700",
+          end: "bottom center -= 200",
+          scrub: true,
+        },
+      });
+
+      tml2.from(".skill_text", 0.5, { x: 100, opacity: 0 });
+
+      let cplusplus = document.getElementById("cplusplus");
+      let html = document.getElementById("html");
+      let css = document.getElementById("css");
+      let js = document.getElementById("js");
+      let github = document.getElementById("github");
+      let figma = document.getElementById("figma");
+      let adobe = document.getElementById("adobe");
+      let sql = document.getElementById("sql");
+      let python = document.getElementById("python");
+
+      logos = [cplusplus, html, css, js, github, figma, adobe, sql, python];
+
+      logos.forEach((logo) => {
+        logo.addEventListener("mouseover", () => {
+          gsap.to(logo, { scale: 1.2, duration: 0.5 }); // Scale to 1.2 on hover
+        });
+
+        logo.addEventListener("mouseout", () => {
+          gsap.to(logo, { scale: 1, duration: 0.5 }); // Return to original scale on mouseout
+        });
+      });
+
+      let upElem = document.getElementById("up");
+
+      upElem.addEventListener("mouseenter", function () {
+        gsap.to(upElem, { opacity: 1, duration: 0.5 });
+      });
+
+      upElem.addEventListener("mouseout", function () {
+        gsap.to(upElem, { opacity: 0.5, duration: 0.5 });
+      });
+    </script>
+  </body>
+</html>

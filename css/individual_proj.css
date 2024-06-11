@@ -1,0 +1,143 @@
+/* CUSTOM CURSOR */
+
+body {
+    cursor: url("../images/arrows/sunrise.png"), auto;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+img {
+    width: 100%;
+}
+
+.slide-in {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding-bottom: 220px;
+}
+
+#myText2 {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 120px;
+}
+
+h1 .char {
+    transform: translateY(100px);
+    transition: transform 0.5s;
+}
+
+
+h4 .char {
+    transform: translateY(10px);
+    transition: transform 0.5s;
+}
+
+.container {
+    max-width: 156.6rem;
+    margin-inline: auto;
+    padding-inline: 2.4rem;
+}
+
+p {
+    font-size: 4.8rem;
+    letter-spacing: -0.03em;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.text__effect {
+    position: relative;
+}
+.text__overlay {
+    display: block;
+    position: absolute;
+    height: 101%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    opacity: 0.7;
+    transform-origin: center right;
+}
+
+.text-block {
+    width: 70%;
+    margin-left: 80px;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.sentence {
+    font-size: 30px;
+    color: #ccc;
+    line-height: 40px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#project_desc .row {
+    margin-top: 150px;
+}
+
+#project_desc .row:nth-child(1) {
+    margin-top: 20px;
+}
+
+.container p {
+    font-size: 30px;
+}
+
+/* Phone Media Query */
+
+@media screen and (max-width: 768px) {
+    /* SLIDE IN GRAPHICS */
+    
+    .slide-in {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    #myText,
+    #myText2 {
+        text-align: center;
+    }
+    
+    /* SCROLL TEXT ANIMATION  */
+    
+    .sentence {
+        font-size: 25px;
+        color: rgb(16,16,16);
+        line-height: 30px;
+    }
+    
+    .contact {
+        color: rgb(16,16,16);
+    }
+
+    header h1 {
+        font-size: 90px;
+        margin-top: 50px;
+    }
+ }
+ 
