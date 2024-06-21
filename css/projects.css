@@ -260,4 +260,12 @@ p {
     .card {
         width: 80%;
     }
+
+    .db h4, .db p {
+        font-size: 11px !important;
+    }
+
+    .learn-btn {
+        width: 70%;
+    }
 }
