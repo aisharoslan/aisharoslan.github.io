@@ -46,7 +46,7 @@ html.lenis {
 }
 
 .logo {
-    width: 65%;
+    width: 100%;
 }
 
 #myText,
@@ -54,8 +54,8 @@ html.lenis {
     font-size: 120px;
 }
 
-.line {
-    text-align: center;
+div.logo_cta {
+    width: 20%;
 }
 
 /* NAME STAGGER */
@@ -70,6 +70,10 @@ h1 {
     font-size: 7rem;
     text-transform: uppercase;
     clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
+}
+
+h1#myText {
+    text-align: center;
 }
 
 .char {
