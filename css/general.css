@@ -277,7 +277,7 @@ li {
 
 /* Phone Media Query */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 500px) and (max-width: 768px) {
     .dark {
         background-color: #ccc;
         color: rgb(16, 16, 16);
@@ -427,3 +427,60 @@ li {
     }
 }
  
+@media screen and (max-width: 500px) {
+
+    /* CONTACT MODAL */
+    .modal-header .btn-close-icon {
+        margin-left: 30px;
+        margin-top: 0;
+    }
+
+    .modal-header {
+        padding-top: 20px;
+    }
+
+    #contactForm {
+        font-size: 25px;
+    }
+
+    .dismissal {
+        padding-left: 138px;
+    }
+
+    .separator {
+        margin-left: 50px;
+    }
+
+    .footer {
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+    .copyright {
+        margin-top: 10px;
+    }
+
+    h3.outfit-regular {
+        font-size: 10px;
+    }
+
+    .socials {
+        margin-top: 10px;
+        width: 40%;
+        margin-right: 10px;
+    }
+
+    .socials img {
+        width: 20%;
+        padding-left: 0;
+    }
+
+    ul {
+        margin-top: 60px;
+    }
+
+    li {
+        font-size: 13px;
+        width: 70px;
+    }
+}

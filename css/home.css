@@ -280,7 +280,7 @@ h2.im {
 
 /* Phone Media Query */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 500px) and (max-width: 768px) {
     /* SLIDE IN GRAPHICS */
     
     .slide-in {
@@ -367,6 +367,135 @@ h2.im {
     #sql {
         width: 32%;
     }
+
+    div.logo_cta {
+        width: 100%;
+    }
  }
- 
- 
+
+ @media screen and (max-width: 500px) {
+    /* SLIDE IN GRAPHICS */
+    
+    .slide-in {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    #myText,
+    #myText2 {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    header {
+        height: 40vh;
+    }
+    
+    /* SCROLL TEXT ANIMATION  */
+    
+    .sentence {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    h2.im {
+        font-size: 60px;
+    }
+
+    /* SKILLS */
+    
+    .skill_text {
+        margin-left: 60px;
+        font-size: 60px;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    p.skill_text {
+        width: 40%;
+    }
+    
+    .skills img {
+        width: 100%;
+    }
+    
+    .skills {
+        display: flex;
+        height: 70vh;
+        margin-left: 50px;
+        margin-right: 0;
+    }
+    
+    #cplusplus {
+        width: 49%;
+        padding: 20px 40px;
+    }
+
+    #html {
+        width: 51%;
+        padding: 20px 40px;
+    }
+
+    #css {
+        width: 45%;
+        padding: 0 40px;
+    }
+
+    #js {
+        width: 55%;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    #python {
+        width: 48%;
+        padding: 20px 40px;
+    }
+
+    #github {
+        width: 52%;
+        padding: 20px 50px;
+    }
+
+    #adobe {
+        width: 46%;
+        padding: 0 40px;
+    }
+
+    #figma {
+        width: 44%;
+        margin-left: 30px;
+        padding: 0 50px;
+    }
+
+    #sql {
+        width: 50%;
+        padding: 0 40px;
+    }
+
+    div.logo_cta {
+        width: 100%;
+    }
+
+    .text-block {
+        margin-left: 20px;
+    }
+
+    .expertise img {
+        width: 90%;
+    }
+
+    .expertise {
+        margin-left: 10px;
+    }
+
+    .image {
+        padding-top: 50px;
+    }
+}
