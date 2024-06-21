@@ -46,12 +46,13 @@ html.lenis {
 }
 
 .logo {
-    width: 50%;
+    width: 65%;
 }
 
 #myText,
 #myText2 {
     font-size: 120px;
+    text-align: center;
 }
 
 /* NAME STAGGER */
