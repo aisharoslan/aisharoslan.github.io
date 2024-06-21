@@ -249,7 +249,11 @@ h2.im {
     transition: all 1s ease;
 }
 
-.resume-div:hover {
+#myText:hover + .resume-div {
+    display: block;
+}
+
+#myText2:hover + .resume-div {
     display: block;
 }
 
