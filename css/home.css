@@ -244,15 +244,17 @@ h2.im {
     padding-bottom: 2%;
 }
 
+.logo_cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .resume-div {
     display: none;
     width: 100%;
     padding-bottom: 10px;
-    transition: all 1s ease;
-}
-
-#ar:hover + .resume-div {
-    display: block;
 }
 
 .resume-btn {

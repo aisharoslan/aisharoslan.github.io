@@ -180,11 +180,13 @@
 
     <!-- SLIDE-IN LOGO AND NAME -->
     <div class="slide-in">
-      <h6 id="cta">hover/tap/drag me!</h6>
-      <img src="../images/brand/logo.png" class="logo" id="ar" />
+      <div class="logo_cta">
+        <h6 id="cta">click/tap/drag me!</h6>
+        <img src="../images/brand/logo.png" class="logo" id="ar" />
+      </div>
       <header class="name">
         <h1 id="myText" class="outfit-black">A i s h a</h1>
-        <div class="resume-div">
+        <div id="resume-div">
           <a
             href="https://drive.google.com/file/d/1AIPGb4GujHfQPTFkOMMAHseTWzYZihfE/view?usp=sharing"
             target="_blank"
@@ -521,6 +523,12 @@
 
       upElem.addEventListener("mouseout", function () {
         gsap.to(upElem, { opacity: 0.5, duration: 0.5 });
+      });
+
+      let logo_cta = document.getElementById("ar");
+
+      logo_cta.addEventListener("click", function () {
+        document.getElementById("resume-div").style.display = "block";
       });
     </script>
   </body>
