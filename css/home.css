@@ -244,12 +244,30 @@ h2.im {
     padding-bottom: 2%;
 }
 
-.resume_arrow {
-    color:rgb(91, 62, 254);
+.resume-div {
+    display: none;
+    transition: all 1s ease;
 }
 
-.resume_arrow:hover {
-    height: 150px;
+.resume-div:hover {
+    display: block;
+}
+
+.resume-btn {
+    margin-top: 20px;
+    background-color:rgb(91, 62, 254);
+    color: #ccc;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.resume-btn:hover {
+    border: 1px solid rgb(91, 62, 254);
+}
+
+.arrow_out {
+    margin-left: 20px;
 }
 
 /* Phone Media Query */

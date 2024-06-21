@@ -92,6 +92,10 @@ p {
     padding-bottom: 10px;
 }
 
+.resume-btn:hover {
+    border: 1px solid rgb(91, 62, 254);
+}
+
 .arrow_out {
     margin-left: 20px;
 }
