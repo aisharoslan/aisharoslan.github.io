@@ -72,10 +72,6 @@ h1 {
     clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
 }
 
-h1#myText {
-    text-align: center;
-}
-
 .char {
     transform: translateY(150px);
     transition: transform .5s;
