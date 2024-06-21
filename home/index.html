@@ -391,6 +391,12 @@
           delay: 0.4,
           duration: 0.1,
         });
+
+        let logo_cta = document.getElementById("ar");
+
+        logo_cta.addEventListener("click", function () {
+          document.getElementById("resume-div").style.display = "block";
+        });
       });
 
       gsap.registerPlugin(Draggable, ScrollTrigger);
@@ -523,12 +529,6 @@
 
       upElem.addEventListener("mouseout", function () {
         gsap.to(upElem, { opacity: 0.5, duration: 0.5 });
-      });
-
-      let logo_cta = document.getElementById("ar");
-
-      logo_cta.addEventListener("click", function () {
-        document.getElementById("resume-div").style.display = "block";
       });
     </script>
   </body>
