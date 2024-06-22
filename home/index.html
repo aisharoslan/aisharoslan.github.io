@@ -188,7 +188,7 @@
         <h1 id="myText" class="outfit-black text-center">A i s h a</h1>
         <div id="resume-div">
           <a
-            href="https://drive.google.com/file/d/1S-NrrVPTRwJba4rqvMd-WYWBQfp_MSxY/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ZbFosIsvgMgFgf9Af6KUHvcrDcplR4CL/view?usp=sharing"
             target="_blank"
             class="resume"
           >
@@ -281,6 +281,7 @@
           <img
             src="../images/brand/profile.png"
             class="image"
+            id="pic"
             alt="profile_picture"
           />
         </div>
@@ -533,6 +534,16 @@
 
       upElem.addEventListener("mouseout", function () {
         gsap.to(upElem, { opacity: 0.5, duration: 0.5 });
+      });
+
+      let pic = document.getElementById("pic");
+      pic.addEventListener("mouseenter", function () {
+        gsap.to(pic, { scale: 1.1, duration: 0.5 });
+        pic.style.cursor = "pointer";
+      });
+
+      pic.addEventListener("mouseout", function () {
+        gsap.to(pic, { scale: 1, duration: 0.5 });
       });
     </script>
   </body>
