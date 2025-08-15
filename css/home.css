@@ -69,7 +69,7 @@ header {
 h1 {
     font-size: 7rem;
     text-transform: uppercase;
-    clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .char {
@@ -94,6 +94,7 @@ p {
 .text__effect {
     position: relative;
 }
+
 .text__overlay {
     display: block;
     position: absolute;
@@ -170,25 +171,27 @@ h2.im {
     margin-right: 200px;
     border-radius: 0.5rem;
     background: linear-gradient(-45deg, #b676e4, #8963da, #1ccaad, #a8d135, #3c8ce7, #e73c7e);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     width: 80%;
-	height: 40vh;
+    height: 40vh;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-.skill-block > .row {
+.skill-block>.row {
     padding-bottom: 0;
 }
 
@@ -263,7 +266,7 @@ h2.im {
 
 .resume-btn {
     margin-top: 20px;
-    background-color:rgb(91, 62, 254);
+    background-color: rgb(91, 62, 254);
     color: #ccc;
     width: 100%;
     padding-top: 10px;
@@ -282,7 +285,7 @@ h2.im {
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
     /* SLIDE IN GRAPHICS */
-    
+
     .slide-in {
         display: flex;
         flex-direction: column;
@@ -298,35 +301,35 @@ h2.im {
     #myText2 {
         text-align: center;
     }
-    
+
     /* SCROLL TEXT ANIMATION  */
-    
+
     .sentence {
         font-size: 25px;
-        color: rgb(16,16,16);
+        color: rgb(16, 16, 16);
         line-height: 30px;
     }
-    
+
     .contact {
-        color: rgb(16,16,16);
+        color: rgb(16, 16, 16);
     }
-    
+
     /* SKILLS */
-    
+
     .skill_text {
         margin-left: 50px;
     }
-    
+
     .skills img {
         width: 100%;
     }
-    
+
     .skills {
         margin-left: 50px;
         display: flex;
         height: 70vh;
     }
-    
+
     #cplusplus {
         width: 30%;
     }
@@ -371,11 +374,11 @@ h2.im {
     div.logo_cta {
         width: 100%;
     }
- }
+}
 
- @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     /* SLIDE IN GRAPHICS */
-    
+
     .slide-in {
         display: flex;
         flex-direction: column;
@@ -396,9 +399,9 @@ h2.im {
     header {
         height: 40vh;
     }
-    
+
     /* SCROLL TEXT ANIMATION  */
-    
+
     .sentence {
         font-size: 20px;
         line-height: 30px;
@@ -409,7 +412,7 @@ h2.im {
     }
 
     /* SKILLS */
-    
+
     .skill_text {
         margin-left: 60px;
         font-size: 60px;
@@ -420,18 +423,18 @@ h2.im {
     p.skill_text {
         width: 40%;
     }
-    
+
     .skills img {
         width: 100%;
     }
-    
+
     .skills {
         display: flex;
         height: 70vh;
         margin-left: 50px;
         margin-right: 0;
     }
-    
+
     #cplusplus {
         width: 49%;
         padding: 20px 40px;

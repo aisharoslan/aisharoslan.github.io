@@ -98,12 +98,12 @@
 }
 
 .jost-regular {
-  font-family: "Jost", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
-  
+
 /* DEFAULT DARK MODE */
 
 .dark {
@@ -223,7 +223,7 @@ li {
 }
 
 .send-btn {
-    background-color:rgb(91, 62, 254);
+    background-color: rgb(91, 62, 254);
     color: #ccc;
 }
 
@@ -242,7 +242,7 @@ li {
     margin-left: 120px;
     width: 80%;
     height: 100px;
-    border-bottom: 1px solid rgba(255,255,255,.25);
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
 }
 
 .footer {
@@ -290,7 +290,7 @@ li {
         background-color: #ccc;
         color: rgb(16, 16, 16);
     }
-   
+
     li {
         text-transform: capitalize;
         width: 80px;
@@ -302,11 +302,11 @@ li {
         transition: all 1s;
         text-align: center;
     }
- 
+
     li a {
         color: rgb(69, 68, 68);
     }
-   
+
     .active {
         color: black;
         border-bottom: 2px solid rgb(16, 16, 16);
@@ -320,7 +320,7 @@ li {
     }
 
     /* FOOTER */
-    
+
     .separator {
         margin-left: 50px;
         border-bottom: 1px solid rgba(75, 75, 75, 0.713);
@@ -329,7 +329,7 @@ li {
     .footer {
         margin-left: 50px;
     }
-    
+
     .copyright {
         margin-top: 20px;
     }
@@ -337,7 +337,7 @@ li {
     .copyright h3 {
         font-size: 25px;
     }
-    
+
     .socials {
         width: 40%;
         margin-right: 10px;
@@ -430,11 +430,11 @@ li {
     }
 
     .send-btn {
-        background-color:rgb(91, 62, 254);
+        background-color: rgb(91, 62, 254);
         color: #ccc;
     }
 }
- 
+
 @media screen and (max-width: 500px) {
 
     /* CONTACT MODAL */
